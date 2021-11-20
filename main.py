@@ -24,7 +24,7 @@ app.currentUID = 0
 
 @app.get('/readme')
 async def readme():
-    return {"message": "Terdapat dua user yang bisa dipakai. 1. username: abcd | password: abcd 2. username: username | password: password "}
+    return {"message": "Untuk mencoba data forum, masukkan forum_id 1001. Post dengan forum_id 1001 dibuat oleh pengguna dengan user_id 1 (username: abcd) sehingga tidak bisa dihapus atau diedit user_id lain. Untuk mencoba data produk, masukkan item_id 1001 dan 1002. Terdapat dua user yang bisa dipakai. 1. username: abcd | password: abcd 2. username: username | password: password "}
 
 @app.post('/login')
 async def user_login(username: str, password: str):
